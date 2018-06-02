@@ -1,4 +1,4 @@
-package MVC.edu.hm.kdiery.view;
+package view;
 
 import MVC.edu.hm.kdiery.datastore.readonly.Offerings;
 
