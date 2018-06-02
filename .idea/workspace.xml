@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8858a82c-a04f-4061-bd44-adb77c49e337" name="Default" comment="new classes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Artwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Artwork.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Offerings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Offerings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/AllOffers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/AllOffers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/Kunstwerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/Kunstwerk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableArtwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableArtwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableOfferings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableOfferings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/view/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/view/Viewer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,75 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MutableOfferings.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MutableOfferings.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableOfferings.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Kunstwerk.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/Kunstwerk.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
-              <folding>
-                <element signature="e#1038#1039#0" expanded="true" />
-                <element signature="e#1057#1058#0" expanded="true" />
-                <element signature="e#1090#1091#0" expanded="true" />
-                <element signature="e#1116#1117#0" expanded="true" />
-                <element signature="e#1284#1285#0" expanded="true" />
-                <element signature="e#1316#1317#0" expanded="true" />
-                <element signature="e#1282#1283#0" expanded="true" />
-                <element signature="e#1301#1302#0" expanded="true" />
-                <element signature="e#1395#1396#0" expanded="true" />
-                <element signature="e#1418#1419#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllOffers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/AllOffers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Artwork.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Artwork.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MutableArtwork.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableArtwork.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-              <folding>
-                <element signature="e#278#279#0" expanded="true" />
-                <element signature="e#326#327#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Offerings.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Offerings.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -133,12 +70,12 @@
         <option value="$PROJECT_DIR$/src/readonly/Offerings.java" />
         <option value="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/writable/MutableOfferings.java" />
         <option value="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/view/Viewer.java" />
-        <option value="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableOfferings.java" />
-        <option value="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableArtwork.java" />
         <option value="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Artwork.java" />
         <option value="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Offerings.java" />
         <option value="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/AllOffers.java" />
         <option value="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/Kunstwerk.java" />
+        <option value="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableArtwork.java" />
+        <option value="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableOfferings.java" />
       </list>
     </option>
   </component>
@@ -268,19 +205,19 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="6" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.1699115" />
+      <window_info anchor="bottom" id="Version Control" order="10" visible="true" weight="0.1699115" />
       <window_info anchor="bottom" id="CheckStyle" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980484" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24980484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -301,10 +238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -319,6 +252,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding>
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -460,72 +397,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/view/Viewer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
+        <state relative-caret-position="272">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableOfferings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableArtwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="51" lean-forward="true" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-          <folding>
-            <element signature="e#278#279#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Offerings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/AllOffers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="33" column="51" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/Kunstwerk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
-          <folding>
-            <element signature="e#1038#1039#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1090#1091#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1284#1285#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#1301#1302#0" expanded="true" />
-            <element signature="e#1395#1396#0" expanded="true" />
-            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Artwork.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <element signature="e#170#171#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Offerings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/Kunstwerk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="80" column="24" selection-start-line="80" selection-start-column="24" selection-end-line="80" selection-end-column="24" />
+          <folding>
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1316#1317#0" expanded="true" />
+            <element signature="e#1511#1512#0" expanded="true" />
+            <element signature="e#1539#1540#0" expanded="true" />
+            <element signature="e#1754#1755#0" expanded="true" />
+            <element signature="e#1786#1787#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/AllOffers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="49" column="7" lean-forward="true" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableArtwork.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableOfferings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
         </state>
       </provider>
     </entry>

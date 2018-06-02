@@ -61,18 +61,26 @@ public class Kunstwerk extends MutableArtwork {
         return auctioned;
     }
 
-    public void setAuctioned(boolean auctioned) {
+    /**
+     * sets auctioned.
+     * @param paramauctioned to be set
+     */
+    public void setAuctioned(boolean paramauctioned) {
         setChanged();
-        this.auctioned = auctioned;
+        this.auctioned = paramauctioned;
     }
 
     public String getBuyer() {
         return buyer;
     }
 
-    public void setBuyer(String buyer) {
+    /**
+     * sets name of buyer.
+     * @param parambuyer to be set
+     */
+    public void setBuyer(String parambuyer) {
         setChanged();
-        this.buyer = buyer;
+        this.buyer = parambuyer;
     }
 
     public int getSoldPrice() {

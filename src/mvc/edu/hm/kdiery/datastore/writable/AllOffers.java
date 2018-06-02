@@ -31,7 +31,7 @@ public class AllOffers extends MutableOfferings {
     /**
      * constructor for AllOffers.
      *
-     * @param stream         all artwork in auction
+     * @param stream all artwork in auction
      */
     public AllOffers(Stream<MutableArtwork> stream) {
         this.artworks = stream;
@@ -48,10 +48,10 @@ public class AllOffers extends MutableOfferings {
     }
 
     /**
-     * set steps remaining if param non negative.
+     * sets remaining steps
      *
-     * @param stepsRemaining
-     * @throws IllegalArgumentException
+     * @param stepsRemaining to be set.
+     * @throws IllegalArgumentException if param negative
      */
     public void setStepsRemaining(int stepsRemaining) throws IllegalArgumentException {
         if (stepsRemaining > 0) {
@@ -73,15 +73,15 @@ public class AllOffers extends MutableOfferings {
     /**
      * sets bid only if param not negative.
      *
-     * @param bid    to be set.
-     * @param bidder bidder of this bid.
-     * @throws IllegalArgumentException if param negative.
+     * @param parambidder of this bid
+     * @param parambid    to be set
+     * @throws IllegalArgumentException if param negative
      */
-    public void setBid(String bidder, int bid) throws IllegalArgumentException {
+    public void setBid(String parambidder, int parambid) throws IllegalArgumentException {
         if (bid > 0) {
             setChanged();
-            this.bidder = bidder;
-            this.bid = bid;
+            this.bidder = parambidder;
+            this.bid = parambid;
         } else {
             throw new IllegalArgumentException();
         }
