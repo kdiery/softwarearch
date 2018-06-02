@@ -1,7 +1,11 @@
 package mvc.edu.hm.kdiery.datastore.writable;
 
-public abstract class MutableArtwork {
+import mvc.edu.hm.kdiery.datastore.readonly.Artwork;
 
-    public abstract MutableArtwork make(String title, int initialPrice);
+public abstract class MutableArtwork extends Artwork {
+
+	MutableArtwork make(String title, int initialPrice) {
+		return new Kunstwerk(title, initialPrice);
+	}
 
 }

@@ -1,8 +1,13 @@
 package mvc.edu.hm.kdiery.datastore.writable;
 
+import java.util.stream.Stream;
 
-public abstract class MutableOfferings {
+import mvc.edu.hm.kdiery.datastore.readonly.Offerings;
 
-    public abstract MutableOfferings make(MutableArtwork... artworks);
+public abstract class MutableOfferings extends Offerings {
+
+	MutableOfferings make(MutableArtwork... artworks) {
+		return new AllOffers(Stream.of(artworks));
+	}
 
 }
