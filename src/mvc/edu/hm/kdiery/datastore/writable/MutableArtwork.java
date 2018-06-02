@@ -1,9 +1,7 @@
-package MVC.edu.hm.kdiery.datastore.writable;
+package mvc.edu.hm.kdiery.datastore.writable;
 
 public abstract class MutableArtwork {
 
-    public Kunstwerk make(String title, int initialPrice) {
-        return new Kunstwerk(title, initialPrice);
-    }
+    public abstract MutableArtwork make(String title, int initialPrice);
 
 }

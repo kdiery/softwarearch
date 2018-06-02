@@ -1,4 +1,4 @@
-package MVC.edu.hm.kdiery.datastore.writable;
+package mvc.edu.hm.kdiery.datastore.writable;
 
 import java.util.stream.Stream;
 

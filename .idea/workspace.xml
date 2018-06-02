@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8858a82c-a04f-4061-bd44-adb77c49e337" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/readonly/Artwork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/readonly/Offerings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/writable/MutableArtwork.java" afterDir="false" />
+    <list default="true" id="8858a82c-a04f-4061-bd44-adb77c49e337" name="Default" comment="new classes">
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MCV/edu/hm/kdiery/writable/Artwork.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/AllOffers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/AllOffers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/Kunstwerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/Kunstwerk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableArtwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableArtwork.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableOfferings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableOfferings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/view/Viewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/view/Viewer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,38 +28,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test.java">
+      <file leaf-file-name="MutableArtwork.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableArtwork.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="68">
+              <caret line="4" column="72" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MutableArtwork.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/writable/MutableArtwork.java">
+      <file leaf-file-name="MutableOfferings.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableOfferings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllOffers.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/AllOffers.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Artwork.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/readonly/Artwork.java">
+        <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Artwork.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Offerings.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/readonly/Offerings.java">
+      <file leaf-file-name="Offerings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Offerings.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Viewer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/view/Viewer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Kunstwerk.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/Kunstwerk.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -67,6 +96,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -79,10 +109,19 @@
       <list>
         <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$PROJECT_DIR$/src/MVC/edu/hm/kdiery/writable/Artwork.java" />
+        <option value="$PROJECT_DIR$/src/MVC/edu/hm/kdiery/view/Viewer.java" />
         <option value="$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/writable/Artwork.java" />
+        <option value="$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/writable/Kunstwerk.java" />
+        <option value="$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/writable/MutableOfferings.java" />
         <option value="$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/writable/MutableArtwork.java" />
+        <option value="$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/writable/AllOffers.java" />
         <option value="$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/readonly/Artwork.java" />
         <option value="$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/readonly/Offerings.java" />
+        <option value="$PROJECT_DIR$/src/readonly/Offerings.java" />
+        <option value="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/writable/MutableOfferings.java" />
+        <option value="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/view/Viewer.java" />
+        <option value="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableArtwork.java" />
+        <option value="$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableOfferings.java" />
       </list>
     </option>
   </component>
@@ -98,6 +137,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -115,24 +155,24 @@
               <item name="softwarearch" type="b2602c69:ProjectViewProjectNode" />
               <item name="softwarearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="readonly" type="462c0819:PsiDirectoryNode" />
+              <item name="writable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="softwarearch" type="b2602c69:ProjectViewProjectNode" />
               <item name="softwarearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="writable" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Hochschule/Softwarearchitektur/checkstyle.xml" />
+    <property name="settings.editor.selected.configurable" value="PMD" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -182,11 +222,18 @@
       <option name="presentableId" value="Default" />
       <updated>1527767448659</updated>
     </task>
+    <task id="LOCAL-00001" summary="new classes">
+      <created>1527775959157</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527775959157</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -197,7 +244,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32920355" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.1699115" />
       <window_info anchor="bottom" id="CheckStyle" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
@@ -213,88 +260,102 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="PMD" order="8" weight="0.32920355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32920355" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="new classes" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableArtwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="8" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableOfferings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/Kunstwerk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="64" selection-start-line="37" selection-start-column="64" selection-end-line="37" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/AllOffers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Artwork.java" />
+    <entry file="file://$PROJECT_DIR$/src/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/MVC/edu/hm/kdiery/readonly.java" />
+    <entry file="file://$PROJECT_DIR$/src/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Offerings.java" />
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Artwork.java" />
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/AllOffers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/Kunstwerk.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/writable/Artwork.java">
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Offerings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/readonly/Artwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/view/Viewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableArtwork.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" column="72" selection-start-line="4" selection-start-column="72" selection-end-line="4" selection-end-column="72" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/mvc/edu/hm/kdiery/datastore/writable/MutableOfferings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MVC/edu/hm/kdiery/readonly.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/writable/Artwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/writable/MutableArtwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/readonly/Artwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MVC/edu/hm/kdiery/datastore/readonly/Offerings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>

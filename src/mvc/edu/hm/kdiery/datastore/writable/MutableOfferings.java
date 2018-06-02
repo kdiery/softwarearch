@@ -1,10 +1,8 @@
-package MVC.edu.hm.kdiery.datastore.writable;
+package mvc.edu.hm.kdiery.datastore.writable;
 
 
 public abstract class MutableOfferings {
 
-    public AllOffers make(MutableArtwork... artworks) {
-        return new AllOffers(artworks);
-    }
+    public abstract MutableOfferings make(MutableArtwork... artworks);
 
 }
