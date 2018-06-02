@@ -1,6 +1,6 @@
-package view;
+package mvc.edu.hm.kdiery.view;
 
-import MVC.edu.hm.kdiery.datastore.readonly.Offerings;
+import mvc.edu.hm.kdiery.datastore.readonly.Offerings;
 
 public interface Viewer {
 
