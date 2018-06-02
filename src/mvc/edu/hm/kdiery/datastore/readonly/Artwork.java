@@ -1,30 +1,20 @@
 package mvc.edu.hm.kdiery.datastore.readonly;
 
-public abstract class Artwork {
+import java.util.Observable;
 
-	public String getTitle() {
-		return null;
-	}
+public abstract class Artwork extends Observable {
 
-	public String getBuyer() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    public String getTitle() {
+        return null;
+    }
 
-	public boolean isAuctioned() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+    public abstract String getBuyer();
 
-	public int getInitialPrice() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    public abstract boolean isAuctioned();
 
-	public int getSoldPrice() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    public abstract int getInitialPrice();
 
-	
+    public abstract int getSoldPrice();
+
+
 }

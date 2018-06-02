@@ -1,29 +1,17 @@
 package mvc.edu.hm.kdiery.datastore.readonly;
 
+import java.util.Observable;
 import java.util.stream.Stream;
 
 import mvc.edu.hm.kdiery.datastore.writable.MutableArtwork;
 
-public abstract class Offerings {
+public abstract class Offerings extends Observable {
 
-	public Object getBidder() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    public abstract Object getBidder();
 
-	public int getBid() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+    public abstract int getBid();
 
-	public Stream<MutableArtwork> getArtworks() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    public abstract Stream<MutableArtwork> getArtworks();
 
-	public int getStepsRemaining() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
+    public abstract int getStepsRemaining();
 }
