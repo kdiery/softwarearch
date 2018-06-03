@@ -63,6 +63,7 @@ public class Kunstwerk extends MutableArtwork {
 
     /**
      * sets auctioned.
+     *
      * @param paramauctioned to be set
      */
     public void setAuctioned(boolean paramauctioned) {
@@ -76,6 +77,7 @@ public class Kunstwerk extends MutableArtwork {
 
     /**
      * sets name of buyer.
+     *
      * @param parambuyer to be set
      */
     public void setBuyer(String parambuyer) {
