@@ -7,9 +7,11 @@ import java.util.Observable;
  */
 public abstract class Artwork extends Observable {
 
-    public String getTitle() {
-        return null;
-    }
+	/**
+	 * returns title.
+	 * @return title.
+	 */
+    public abstract String getTitle();
 
     /**
      * returns buyer.
