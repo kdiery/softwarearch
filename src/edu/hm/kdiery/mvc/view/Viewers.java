@@ -3,15 +3,15 @@
  * bluna: Intel Core i7-5600U/2600 MHz, 4 Core(s), 15936 MByte RAM
  **/
 
-package mvc.edu.hm.kdiery.view;
+package edu.hm.kdiery.mvc.view;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Iterator;
 import java.util.Properties;
 
-import mvc.edu.hm.kdiery.datastore.readonly.Artwork;
-import mvc.edu.hm.kdiery.datastore.readonly.Offerings;
+import edu.hm.kdiery.mvc.datastore.readonly.Artwork;
+import edu.hm.kdiery.mvc.datastore.readonly.Offerings;
 
 /**
  * Companionklasse, die die Datenbasis in formaler Darstellung ausgibt.
@@ -67,7 +67,7 @@ final class Viewers {
 			properties.setProperty(prefix + "initialPrice", Integer.toString(artwork.getInitialPrice()));
 			properties.setProperty(prefix + "auctioned", Boolean.toString(artwork.isAuctioned()));
 			if (artwork.isAuctioned() && artwork.getBuyer() != null) {
-				properties.setProperty(prefix + "buyer", (String) artwork.getBuyer());
+				properties.setProperty(prefix + "buyer", artwork.getBuyer());
 				properties.setProperty(prefix + "soldPrice", Integer.toString(artwork.getSoldPrice()));
 			}
 			artworkIndex++;

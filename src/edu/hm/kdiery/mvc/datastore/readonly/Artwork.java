@@ -1,4 +1,4 @@
-package mvc.edu.hm.kdiery.datastore.readonly;
+package edu.hm.kdiery.mvc.datastore.readonly;
 
 /**
  * abstract class for artwork.

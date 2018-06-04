@@ -1,6 +1,5 @@
 
-import mvc.edu.hm.kdiery.*;
-import mvc.edu.hm.kdiery.view.Callout;
+import edu.hm.kdiery.mvc.view.Callout;
 
 public class SimpleTests {
 

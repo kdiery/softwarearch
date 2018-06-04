@@ -1,4 +1,4 @@
-package mvc.edu.hm.kdiery.datastore.writable;
+package edu.hm.kdiery.mvc.datastore.writable;
 
 import java.util.stream.Stream;
 
@@ -39,20 +39,23 @@ public class AllOffers extends MutableOfferings {
         this.bid = 0;
     }
 
+    @Override
     public Stream<MutableArtwork> getArtworks() {
         return artworks;
     }
 
+    @Override
     public int getStepsRemaining() {
         return stepsRemaining;
     }
 
 
-
+    @Override
     public String getBidder() {
         return bidder;
     }
 
+    @Override
     public int getBid() {
         return bid;
     }
@@ -60,19 +63,25 @@ public class AllOffers extends MutableOfferings {
     /**
      * sets bid only if param not negative.
      *
-     * @param parambidder of this bid
-     * @param parambid    to be set
+     * @param bid to be set
      * @throws IllegalArgumentException if param negative
      */
-    void setBid(String parambidder, int parambid) throws IllegalArgumentException {
+    @Override
+    public void setBid(int bid) throws IllegalArgumentException {
         if (bid > 0) {
             setChanged();
-            this.bidder = parambidder;
-            this.bid = parambid;
+            this.bid = bid;
             notifyObservers();
         } else {
             throw new IllegalArgumentException();
         }
+    }
+
+    @Override
+    public void setBidder(String bidder) {
+        setChanged();
+        this.bidder = bidder;
+        notifyObservers();
     }
 
     /**
@@ -81,6 +90,7 @@ public class AllOffers extends MutableOfferings {
      * @param stepsRemaining to be set.
      * @throws IllegalArgumentException if param negative
      */
+    @Override
     public void setStepsRemaining(int stepsRemaining) throws IllegalArgumentException {
         if (stepsRemaining > 0) {
             setChanged();

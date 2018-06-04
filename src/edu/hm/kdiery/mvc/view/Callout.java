@@ -2,7 +2,7 @@
  * Oracle Corporation Java 1.8.0_121, Linux i386 4.15.4
  * bluna: Intel Core i7-5600U/2600 MHz, 4 Core(s), 15936 MByte RAM
  **/
-package mvc.edu.hm.kdiery.view;
+package edu.hm.kdiery.mvc.view;
 
 /**
  * Nachrichtentexte fuer einen Viewer, der auf System.out protokolliert.

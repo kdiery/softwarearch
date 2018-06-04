@@ -1,4 +1,4 @@
-package mvc.edu.hm.kdiery.datastore.writable;
+package edu.hm.kdiery.mvc.datastore.writable;
 
 /**
  * conrecte class for database.
@@ -49,14 +49,17 @@ public class Kunstwerk extends MutableArtwork {
         this.soldPrice = 0;
     }
 
+    @Override
     public String getTitle() {
         return title;
     }
 
+    @Override
     public int getInitialPrice() {
         return initialPrice;
     }
 
+    @Override
     public boolean isAuctioned() {
         return auctioned;
     }
@@ -64,12 +67,14 @@ public class Kunstwerk extends MutableArtwork {
     /**
      * sets auctioned.
      *
-     * @param paramauctioned to be set
+     * @param auctioned to be set
      */
-    public void setAuctioned(boolean paramauctioned) {
-        this.auctioned = paramauctioned;
+    @Override
+    public void setAuctioned(boolean auctioned) {
+        this.auctioned = auctioned;
     }
 
+    @Override
     public String getBuyer() {
         return buyer;
     }
@@ -77,12 +82,14 @@ public class Kunstwerk extends MutableArtwork {
     /**
      * sets name of buyer.
      *
-     * @param parambuyer to be set
+     * @param buyer to be set
      */
-    public void setBuyer(String parambuyer) {
-        this.buyer = parambuyer;
+    @Override
+    public void setBuyer(String buyer) {
+        this.buyer = buyer;
     }
 
+    @Override
     public int getSoldPrice() {
         return soldPrice;
     }
@@ -93,6 +100,7 @@ public class Kunstwerk extends MutableArtwork {
      * @param soldPrice of artwork.
      * @throws IllegalArgumentException if not acceptable input
      */
+    @Override
     public void setSoldPrice(int soldPrice) throws IllegalArgumentException {
         if (soldPrice > 0) {
             this.soldPrice = soldPrice;

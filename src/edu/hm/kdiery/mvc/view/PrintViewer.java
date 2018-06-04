@@ -1,6 +1,6 @@
-package mvc.edu.hm.kdiery.view;
+package edu.hm.kdiery.mvc.view;
 
-import mvc.edu.hm.kdiery.datastore.readonly.Offerings;
+import edu.hm.kdiery.mvc.datastore.readonly.Offerings;
 
 import java.io.PrintWriter;
 import java.util.Observable;
@@ -53,6 +53,7 @@ public class PrintViewer implements Viewer {
              case 0:
                  writer.println(Callout.Done.getFormatNobid());
                  break;
+             default: break;
          }
         writer.flush();
     }

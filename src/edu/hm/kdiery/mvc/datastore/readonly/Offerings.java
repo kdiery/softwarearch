@@ -1,9 +1,9 @@
-package mvc.edu.hm.kdiery.datastore.readonly;
+package edu.hm.kdiery.mvc.datastore.readonly;
 
 import java.util.Observable;
 import java.util.stream.Stream;
 
-import mvc.edu.hm.kdiery.datastore.writable.MutableArtwork;
+import edu.hm.kdiery.mvc.datastore.writable.MutableArtwork;
 
 /**
  * abstract class for offerings.

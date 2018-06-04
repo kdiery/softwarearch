@@ -1,10 +1,13 @@
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.stream.Stream;
 
-import mvc.edu.hm.kdiery.datastore.writable.*;
-import mvc.edu.hm.kdiery.datastore.readonly.*;
-import mvc.edu.hm.kdiery.view.*;
+import edu.hm.kdiery.mvc.datastore.readonly.Offerings;
+import edu.hm.kdiery.mvc.datastore.writable.AllOffers;
+import edu.hm.kdiery.mvc.datastore.writable.Kunstwerk;
+import edu.hm.kdiery.mvc.view.Viewer;
+import edu.hm.kdiery.mvc.datastore.writable.*;
+import edu.hm.kdiery.mvc.datastore.readonly.*;
+import edu.hm.kdiery.mvc.view.*;
 
 public class Anwendung_Main {
 

@@ -1,9 +1,9 @@
-package mvc.edu.hm.kdiery.view;
+package edu.hm.kdiery.mvc.view;
 
 import java.io.PrintWriter;
 import java.util.Observer;
 
-import mvc.edu.hm.kdiery.datastore.readonly.Offerings;
+import edu.hm.kdiery.mvc.datastore.readonly.Offerings;
 
 /**
  * Basis for all views.

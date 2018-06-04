@@ -1,4 +1,4 @@
-package mvc.edu.hm.kdiery.view;
+package edu.hm.kdiery.mvc.view;
 
 import java.util.Observable;
 
