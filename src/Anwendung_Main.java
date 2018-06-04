@@ -1,13 +1,13 @@
 import java.io.PrintWriter;
 import java.util.stream.Stream;
 
-import edu.hm.kdiery.mvc.datastore.readonly.Offerings;
+/*import edu.hm.kdiery.mvc.datastore.readonly.Offerings;
 import edu.hm.kdiery.mvc.datastore.writable.AllOffers;
 import edu.hm.kdiery.mvc.datastore.writable.Kunstwerk;
 import edu.hm.kdiery.mvc.view.Viewer;
 import edu.hm.kdiery.mvc.datastore.writable.*;
 import edu.hm.kdiery.mvc.datastore.readonly.*;
-import edu.hm.kdiery.mvc.view.*;
+import edu.hm.kdiery.mvc.view.*;*/
 
 public class Anwendung_Main {
 
@@ -21,10 +21,10 @@ public class Anwendung_Main {
         Viewer User1 = Viewer.make("logger", offers);
         Viewer User2 = Viewer.make("spectator", offers, new PrintWriter(System.out));*/
 
-        Kunstwerk[] monalisa = {new Kunstwerk("Mona List", 2000)};
+        /*Kunstwerk[] monalisa = {new Kunstwerk("Mona List", 2000)};
         Offerings offerings = new AllOffers(Stream.of(monalisa));
         Viewer user = Viewer.make("spectator", offerings, new PrintWriter(System.out));
-        ((AllOffers) offerings).setStepsRemaining(4);
+        ((AllOffers) offerings).setStepsRemaining(4);*/
     }
 
 }

@@ -28,7 +28,7 @@ public abstract class MutableOfferings extends Offerings {
     /**
      * set bidder and bid.
      * @param bid to be set
-     * @throws IllegalArgumentException if not valid value
+     * @throws IllegalArgumentException if value not valid
      */
     public abstract void setBid(int bid) throws IllegalArgumentException;
 

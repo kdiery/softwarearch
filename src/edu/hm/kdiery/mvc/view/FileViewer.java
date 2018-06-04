@@ -5,11 +5,11 @@ import java.util.Observable;
 /**
  * writes databasis to auction.n.log.
  */
-public class FileViewer implements Viewer {
+class FileViewer implements Viewer {
 
 
     @Override
-    public void update(Observable o, Object arg) {
+    public void update(Observable observable, Object arg) {
 
     }
 }

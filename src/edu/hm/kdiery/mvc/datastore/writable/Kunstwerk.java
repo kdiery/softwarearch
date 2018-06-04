@@ -3,7 +3,7 @@ package edu.hm.kdiery.mvc.datastore.writable;
 /**
  * conrecte class for database.
  */
-public class Kunstwerk extends MutableArtwork {
+ class Kunstwerk extends MutableArtwork {
 
     /**
      * title of artwork.
@@ -37,7 +37,7 @@ public class Kunstwerk extends MutableArtwork {
      * @param initialPrice of artwork
      * @throws IllegalArgumentException if negative initialPrice
      */
-    public Kunstwerk(String title, int initialPrice) throws IllegalArgumentException {
+     Kunstwerk(String title, int initialPrice) throws IllegalArgumentException {
         this.title = title;
         if (initialPrice > 0) {
             this.initialPrice = initialPrice;

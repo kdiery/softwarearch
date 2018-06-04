@@ -6,33 +6,41 @@ package edu.hm.kdiery.mvc.view;
 
 /**
  * Nachrichtentexte fuer einen Viewer, der auf System.out protokolliert.
- * 
+ *
  * @author R. Schiedermeier, rs@cs.hm.edu
  * @version 2018-05-21
  */
 public enum Callout {
-	/**
-	 * Die Ordnungsnummer der Nachrichten entspricht der Anzahl verbleibender
-	 * Schritte.
-	 */
-	Done("%d zum Dritten, verkauft!", "Keine Gebote, nicht verkauft."), Going2nd("%d zum Zweiten ...", "%d zum Zweiten ..."), Going1st("%d zum Ersten ...", "%d zum Ersten ..."), Remaining3("noch %d geboten, hoere ich mehr?", "Mindestgebot noch %d, bietet jemand?"), Remaining4("%d geboten, hoere ich mehr?", "Mindestgebot %d, bietet jemand?"), NewBid("%d geboten!", "Mindestgebot %d");
+    /**
+     * Die Ordnungsnummer der Nachrichten entspricht der Anzahl verbleibender Schritte.
+     */
+    Done("%d zum Dritten, verkauft!", "Keine Gebote, nicht verkauft."),
+    Going2nd("%d zum Zweiten ...", "%d zum Zweiten ..."),
+    Going1st("%d zum Ersten ...", "%d zum Ersten ..."),
+    Remaining3("noch %d geboten, hoere ich mehr?", "Mindestgebot noch %d, bietet jemand?"),
+    Remaining4("%d geboten, hoere ich mehr?", "Mindestgebot %d, bietet jemand?"),
+    NewBid("%d geboten!", "Mindestgebot %d");
 
-	/** Nachrichtentext mit Gebot. */
-	private final String formatBid;
+    /**
+     * Nachrichtentext mit Gebot.
+     */
+    private final String formatBid;
 
-	/** Nachrichtentext ohne Gebot. */
-	private final String formatNobid;
+    /**
+     * Nachrichtentext ohne Gebot.
+     */
+    private final String formatNobid;
 
-	Callout(String formatBid, String formatNobid) {
-		this.formatBid = formatBid;
-		this.formatNobid = formatNobid;
-	}
+    Callout(String formatBid, String formatNobid) {
+        this.formatBid = formatBid;
+        this.formatNobid = formatNobid;
+    }
 
-	public String getFormatNobid() {
-		return formatNobid;
-	}
+    public String getFormatNobid() {
+        return formatNobid;
+    }
 
-	public String getFormatBid() {
-		return formatBid;
-	}
+    public String getFormatBid() {
+        return formatBid;
+    }
 }

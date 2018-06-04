@@ -8,7 +8,7 @@ import java.util.Observable;
 /**
  * Writes to PrintWriter every update.
  */
-public class PrintViewer implements Viewer {
+ class PrintViewer implements Viewer {
 
     /**
      * Writer to write to.
@@ -33,7 +33,7 @@ public class PrintViewer implements Viewer {
     }
 
     @Override
-    public void update(Observable o, Object arg) {
+    public void update(Observable observable, Object arg) {
          switch (offerings.getStepsRemaining()) {
              case 5:
                  writer.println(Callout.NewBid.getFormatNobid());

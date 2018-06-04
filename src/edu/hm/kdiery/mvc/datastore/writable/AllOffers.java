@@ -6,7 +6,7 @@ import java.util.stream.Stream;
 /**
  * concrecte class for all artworks.
  */
-public class AllOffers extends MutableOfferings {
+ class AllOffers extends MutableOfferings {
 
     /**
      * stream of artworks.
@@ -33,7 +33,7 @@ public class AllOffers extends MutableOfferings {
      *
      * @param stream all artwork in auction
      */
-    public AllOffers(Stream<MutableArtwork> stream) {
+     AllOffers(Stream<MutableArtwork> stream) {
         this.artworks = stream;
         this.bidder = null;
         this.bid = 0;
@@ -85,7 +85,7 @@ public class AllOffers extends MutableOfferings {
     }
 
     /**
-     * sets remaining steps
+     * sets remaining steps.
      *
      * @param stepsRemaining to be set.
      * @throws IllegalArgumentException if param negative
