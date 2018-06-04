@@ -67,7 +67,6 @@ public class Kunstwerk extends MutableArtwork {
      * @param paramauctioned to be set
      */
     public void setAuctioned(boolean paramauctioned) {
-        setChanged();
         this.auctioned = paramauctioned;
     }
 
@@ -81,7 +80,6 @@ public class Kunstwerk extends MutableArtwork {
      * @param parambuyer to be set
      */
     public void setBuyer(String parambuyer) {
-        setChanged();
         this.buyer = parambuyer;
     }
 
@@ -97,7 +95,6 @@ public class Kunstwerk extends MutableArtwork {
      */
     public void setSoldPrice(int soldPrice) throws IllegalArgumentException {
         if (soldPrice > 0) {
-            setChanged();
             this.soldPrice = soldPrice;
         } else {
             throw new IllegalArgumentException();

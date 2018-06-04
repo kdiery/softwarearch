@@ -1,11 +1,9 @@
 package mvc.edu.hm.kdiery.datastore.readonly;
 
-import java.util.Observable;
-
 /**
  * abstract class for artwork.
  */
-public abstract class Artwork extends Observable {
+public abstract class Artwork {
 
 	/**
 	 * returns title.

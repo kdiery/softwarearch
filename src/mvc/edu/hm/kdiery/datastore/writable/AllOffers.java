@@ -47,20 +47,7 @@ public class AllOffers extends MutableOfferings {
         return stepsRemaining;
     }
 
-    /**
-     * sets remaining steps
-     *
-     * @param stepsRemaining to be set.
-     * @throws IllegalArgumentException if param negative
-     */
-    public void setStepsRemaining(int stepsRemaining) throws IllegalArgumentException {
-        if (stepsRemaining > 0) {
-            setChanged();
-            this.stepsRemaining = stepsRemaining;
-        } else {
-            throw new IllegalArgumentException();
-        }
-    }
+
 
     public String getBidder() {
         return bidder;
@@ -77,13 +64,32 @@ public class AllOffers extends MutableOfferings {
      * @param parambid    to be set
      * @throws IllegalArgumentException if param negative
      */
-    public void setBid(String parambidder, int parambid) throws IllegalArgumentException {
+    void setBid(String parambidder, int parambid) throws IllegalArgumentException {
         if (bid > 0) {
             setChanged();
             this.bidder = parambidder;
             this.bid = parambid;
+            notifyObservers();
         } else {
             throw new IllegalArgumentException();
         }
     }
+
+    /**
+     * sets remaining steps
+     *
+     * @param stepsRemaining to be set.
+     * @throws IllegalArgumentException if param negative
+     */
+    public void setStepsRemaining(int stepsRemaining) throws IllegalArgumentException {
+        if (stepsRemaining > 0) {
+            setChanged();
+            this.stepsRemaining = stepsRemaining;
+            notifyObservers();
+        } else {
+            throw new IllegalArgumentException();
+        }
+    }
+
+
 }

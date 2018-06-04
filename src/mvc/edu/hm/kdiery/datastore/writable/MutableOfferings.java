@@ -18,4 +18,9 @@ public abstract class MutableOfferings extends Offerings {
         return new AllOffers(Stream.of(artworks));
     }
 
+    abstract void setStepsRemaining(int stepsReamining) throws IllegalArgumentException;
+
+    abstract void setBid(String parambidder, int parambid) throws IllegalArgumentException;
+
+
 }

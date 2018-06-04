@@ -23,7 +23,7 @@ public abstract class Offerings extends Observable {
     public abstract int getBid();
 
     /**
-     * reutrn stream of artworks.
+     * return stream of artworks.
      * @return stream of artworks
      */
     public abstract Stream<MutableArtwork> getArtworks();
