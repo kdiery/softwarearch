@@ -50,7 +50,7 @@ public class PrintViewer implements Viewer {
              case 1:
                  writer.println(Callout.Going1st.getFormatNobid());
                  break;
-             case 2:
+             case 0:
                  writer.println(Callout.Done.getFormatNobid());
                  break;
          }
