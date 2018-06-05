@@ -1,5 +1,7 @@
 package edu.hm.kdiery.mvc.datastore.writable;
 
+import java.util.Arrays;
+import java.util.Set;
 import java.util.stream.Stream;
 
 import edu.hm.kdiery.mvc.datastore.readonly.Offerings;
@@ -15,7 +17,7 @@ public abstract class MutableOfferings extends Offerings {
      * @return AllOffers
      */
     public static MutableOfferings make(MutableArtwork... artworks) {
-        return new AllOffers(Stream.of(artworks));
+        return new AllOffers(Arrays.asList(artworks));
     }
 
     /**
@@ -38,6 +40,11 @@ public abstract class MutableOfferings extends Offerings {
      */
     public abstract void setBidder(String bidder);
 
+    /**
+     * overrides getArtworks.
+     * @return
+     */
+    public abstract Stream<MutableArtwork> getArtworks();
 
 
 }

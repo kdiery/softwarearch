@@ -1,5 +1,9 @@
 package edu.hm.kdiery.mvc.datastore.writable;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.stream.Stream;
 
 
@@ -11,7 +15,8 @@ import java.util.stream.Stream;
     /**
      * stream of artworks.
      */
-    private final Stream<MutableArtwork> artworks;
+//    private final Stream<MutableArtwork> artworks;
+    private final List<MutableArtwork> artworks;
 
     /**
      * remaining steps of auction.
@@ -31,17 +36,17 @@ import java.util.stream.Stream;
     /**
      * constructor for AllOffers.
      *
-     * @param stream all artwork in auction
+     * @param artworks all artwork in auction
      */
-     AllOffers(Stream<MutableArtwork> stream) {
-        this.artworks = stream;
+     AllOffers(final List<MutableArtwork> artworks) {
+        this.artworks = artworks;
         this.bidder = null;
         this.bid = 0;
     }
 
     @Override
     public Stream<MutableArtwork> getArtworks() {
-        return artworks;
+         return Stream.of(MutableArtwork.class.cast(artworks));
     }
 
     @Override
@@ -71,7 +76,6 @@ import java.util.stream.Stream;
         if (bid > 0) {
             setChanged();
             this.bid = bid;
-            notifyObservers();
         } else {
             throw new IllegalArgumentException();
         }
@@ -81,7 +85,6 @@ import java.util.stream.Stream;
     public void setBidder(String bidder) {
         setChanged();
         this.bidder = bidder;
-        notifyObservers();
     }
 
     /**
@@ -95,7 +98,6 @@ import java.util.stream.Stream;
         if (stepsRemaining > 0) {
             setChanged();
             this.stepsRemaining = stepsRemaining;
-            notifyObservers();
         } else {
             throw new IllegalArgumentException();
         }
