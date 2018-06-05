@@ -1,4 +1,7 @@
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 import edu.hm.kdiery.mvc.view.Callout;
 
 public class SimpleTests {
@@ -16,6 +19,16 @@ public class SimpleTests {
 		System.out.printf(Callout.Remaining4.getFormatNobid() + "\n", 30);
 		System.out.printf(Callout.Done.getFormatNobid() + "\n", 30);
 
+		String homeDir = System.getProperty("java.io.tmpdir");
+    	System.out.println(homeDir);
+		try {
+			@SuppressWarnings("resource")
+			FileWriter write = new FileWriter(homeDir +"auction." + 1 + ".log");
+			write.write("here");
+			write.flush();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

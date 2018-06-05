@@ -24,6 +24,8 @@ public interface Viewer extends Observer {
             viewer = new PrintViewer((PrintWriter) args[0], offerings);
         } else if ("logger".equals(typekey)) {
             viewer = new FileViewer();
+        } else if ("dummy".equals(typekey)) {
+        	viewer = new Dummyviewer();
         }
 
         return viewer;
