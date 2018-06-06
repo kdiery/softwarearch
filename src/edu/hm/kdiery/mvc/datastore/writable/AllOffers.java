@@ -1,6 +1,6 @@
 package edu.hm.kdiery.mvc.datastore.writable;
 
-import java.util.Observable;
+import java.util.List;
 import java.util.stream.Stream;
 
 
@@ -13,7 +13,7 @@ import java.util.stream.Stream;
      * stream of artworks.
      */
 //    private final Stream<MutableArtwork> artworks;
-    private final Stream<MutableArtwork> artworks;
+    private final List<MutableArtwork> artworks;
 
     /**
      * remaining steps of auction.
@@ -33,17 +33,18 @@ import java.util.stream.Stream;
     /**
      * constructor for AllOffers.
      *
-     * @param artworks all artwork in auction
+     * @param list all artwork in auction
      */
-     AllOffers(final Stream<MutableArtwork> artworks) {
-        this.artworks = artworks;
+     AllOffers(final List<MutableArtwork> list) {
+        this.artworks = list;
+        list.forEach(art -> art.setOfferings(this));
         this.bidder = null;
         this.bid = 0;
     }
 
     @Override
     public Stream<MutableArtwork> getArtworks() {
-         return artworks;
+         return artworks.stream();
     }
 
     @Override
@@ -55,6 +56,10 @@ import java.util.stream.Stream;
     @Override
     public String getBidder() {
         return bidder;
+    }
+    
+    public void ChangeData() {
+    	setChanged();
     }
 
     @Override

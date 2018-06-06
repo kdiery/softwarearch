@@ -23,7 +23,7 @@ public interface Viewer extends Observer {
         if ("spectator".equals(typekey)) {
             viewer = new PrintViewer((PrintWriter) args[0], offerings);
         } else if ("logger".equals(typekey)) {
-            viewer = new FileViewer();
+            viewer = new FileViewer(offerings);
         } else if ("dummy".equals(typekey)) {
         	viewer = new Dummyviewer();
         }

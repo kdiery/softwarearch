@@ -44,18 +44,18 @@ class PrintViewer implements Viewer {
         this.offerings = offerings;
         noBidMap = new HashMap<>();
         noBidMap.put(0, Callout.Done.getFormatNobid());
-        noBidMap.put(1, Callout.Going1st.getFormatNobid());
-        noBidMap.put(2, Callout.Going2nd.getFormatNobid());
+        noBidMap.put(1, Callout.Going2nd.getFormatNobid());
+        noBidMap.put(2, Callout.Going1st.getFormatNobid());
         noBidMap.put(3, Callout.Remaining3.getFormatNobid());
         noBidMap.put(4, Callout.Remaining4.getFormatNobid());
         noBidMap.put(5, Callout.NewBid.getFormatNobid());
         bidMap = new HashMap<>();
-        noBidMap.put(0, Callout.Done.getFormatBid());
-        noBidMap.put(1, Callout.Going1st.getFormatBid());
-        noBidMap.put(2, Callout.Going2nd.getFormatBid());
-        noBidMap.put(3, Callout.Remaining3.getFormatBid());
-        noBidMap.put(4, Callout.Remaining4.getFormatBid());
-        noBidMap.put(5, Callout.NewBid.getFormatBid());
+        bidMap.put(0, Callout.Done.getFormatBid());
+        bidMap.put(1, Callout.Going2nd.getFormatBid());
+        bidMap.put(2, Callout.Going1st.getFormatBid());
+        bidMap.put(3, Callout.Remaining3.getFormatBid());
+        bidMap.put(4, Callout.Remaining4.getFormatBid());
+        bidMap.put(5, Callout.NewBid.getFormatBid());
         offerings.addObserver(this);
     }
 
@@ -63,10 +63,10 @@ class PrintViewer implements Viewer {
     public void update(Observable observable, Object arg) {
         final Artwork artwork = offerings.getArtworks().filter(p -> !((Artwork) p).isAuctioned()).findFirst().orElseThrow(IllegalStateException::new);
         writer.printf(artwork.getTitle() + ": ");
-        if (offerings.getBidder().equals(null)) {
-            writer.printf(noBidMap.get(offerings.getStepsRemaining()), artwork.getInitialPrice());
+        if (offerings.getBidder() == null) {
+            writer.printf(noBidMap.get(offerings.getStepsRemaining()) + "\n", artwork.getInitialPrice());
         } else {
-            writer.printf(bidMap.get(offerings.getStepsRemaining()), offerings.getBid());
+            writer.printf(bidMap.get(offerings.getStepsRemaining()) + "\n", offerings.getBid());
         }
         writer.flush();
     }
