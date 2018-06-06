@@ -1,5 +1,6 @@
 package edu.hm.kdiery.mvc.datastore.writable;
 
+import java.util.Observable;
 import java.util.stream.Stream;
 
 
@@ -98,6 +99,5 @@ import java.util.stream.Stream;
             throw new IllegalArgumentException();
         }
     }
-
 
 }

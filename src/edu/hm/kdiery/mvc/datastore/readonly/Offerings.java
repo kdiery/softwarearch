@@ -1,9 +1,8 @@
 package edu.hm.kdiery.mvc.datastore.readonly;
 
-import edu.hm.kdiery.mvc.datastore.writable.MutableArtwork;
-
 import java.util.Observable;
 import java.util.stream.Stream;
+import java.util.Observer;
 
 
 /**
@@ -27,7 +26,7 @@ public abstract class Offerings extends Observable {
      * return stream of artworks.
      * @return stream of artworks
      */
-    public abstract Stream<MutableArtwork> getArtworks();
+    public abstract Stream<? extends Artwork> getArtworks();
 
     /**
      * returns remaining steps.

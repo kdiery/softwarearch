@@ -1,5 +1,6 @@
 package edu.hm.kdiery.mvc.datastore.readonly;
 
+
 /**
  * abstract class for artwork.
  */
