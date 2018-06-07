@@ -27,7 +27,7 @@ final class Viewers {
      * @param outputStream Ausgabeziel.
      * @throws IOException problems with I/O
      */
-    static void printXML(Offerings offerings, OutputStream outputStream) throws IOException {
+    /* default */static void printXML(Offerings offerings, OutputStream outputStream) throws IOException {
         toProperties(offerings).storeToXML(outputStream, null);
     }
 
@@ -38,7 +38,7 @@ final class Viewers {
      * @param outputStream Ausgabeziel.
      * @throws IOException problems with I/O
      */
-    static void printProperties(Offerings offerings, OutputStream outputStream) throws IOException {
+    /* default */static void printProperties(Offerings offerings, OutputStream outputStream) throws IOException {
         toProperties(offerings).store(outputStream, null);
     }
 
@@ -56,7 +56,7 @@ final class Viewers {
             properties.setProperty("offerings.bid", Integer.toString(offerings.getBid()));
         }
         int artworkIndex = 0;
-        for (Iterator<? extends Artwork> artworkIterator = (offerings.getArtworks()).iterator(); artworkIterator
+        for (final Iterator<? extends Artwork> artworkIterator = (offerings.getArtworks()).iterator(); artworkIterator
                 .hasNext(); ) {
             final Artwork artwork = artworkIterator.next();
             final String prefix = "artwork." + artworkIndex + '.';

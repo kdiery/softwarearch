@@ -12,8 +12,7 @@ import java.util.stream.Stream;
     /**
      * stream of artworks.
      */
-//    private final Stream<MutableArtwork> artworks;
-    private final List<MutableArtwork> artworks;
+    private final List<MutableArtwork> kunstwerke;
 
     /**
      * remaining steps of auction.
@@ -35,8 +34,8 @@ import java.util.stream.Stream;
      *
      * @param list all artwork in auction
      */
-     AllOffers(final List<MutableArtwork> list) {
-        this.artworks = list;
+     /* default */AllOffers(final List<MutableArtwork> list) {
+        this.kunstwerke = list;
         list.forEach(art -> art.setOfferings(this));
         this.bidder = null;
         this.bid = 0;
@@ -44,7 +43,7 @@ import java.util.stream.Stream;
 
     @Override
     public Stream<MutableArtwork> getArtworks() {
-         return artworks.stream();
+         return kunstwerke.stream();
     }
 
     @Override
@@ -58,7 +57,10 @@ import java.util.stream.Stream;
         return bidder;
     }
     
-    public void ChangeData() {
+    /**
+     * setChanged to signal the Observer.
+     */
+    public void changeData() {
     	setChanged();
     }
 

@@ -2,7 +2,6 @@ package edu.hm.kdiery.mvc.datastore.readonly;
 
 import java.util.Observable;
 import java.util.stream.Stream;
-import java.util.Observer;
 
 
 /**

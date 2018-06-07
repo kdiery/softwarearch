@@ -35,5 +35,9 @@ public abstract class MutableArtwork extends Artwork {
      */
     public abstract void setBuyer(String buyer);
     
+    /**
+     * set Offerings.
+     * @param datastore to be set
+     */
     public abstract void setOfferings(AllOffers datastore);
 }

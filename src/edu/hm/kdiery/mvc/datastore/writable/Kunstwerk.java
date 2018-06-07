@@ -28,8 +28,11 @@ class Kunstwerk extends MutableArtwork {
 	/**
 	 * price for what artwork has been sold.
 	 */
-	private int soldPrice = 0;
+	private int soldPrice;
 
+	/**
+	 * variable of AllOffers.
+	 */
 	private AllOffers datastore;
 
 	/**
@@ -42,7 +45,7 @@ class Kunstwerk extends MutableArtwork {
 	 * @throws IllegalArgumentException
 	 *             if negative initialPrice
 	 */
-	Kunstwerk(String title, int initialPrice) throws IllegalArgumentException {
+	/* default */Kunstwerk(String title, int initialPrice) throws IllegalArgumentException {
 		this.title = title;
 		if (initialPrice >= 0) {
 			this.initialPrice = initialPrice;
@@ -79,7 +82,7 @@ class Kunstwerk extends MutableArtwork {
 	public void setAuctioned(boolean auctioned) {
 		this.auctioned = auctioned;
 		if (datastore != null)
-			datastore.ChangeData();
+			datastore.changeData();
 	}
 
 	@Override
@@ -97,7 +100,7 @@ class Kunstwerk extends MutableArtwork {
 	public void setBuyer(String buyer) {
 		this.buyer = buyer;
 		if (datastore != null)
-			datastore.ChangeData();
+			datastore.changeData();
 	}
 
 	@Override
@@ -118,14 +121,14 @@ class Kunstwerk extends MutableArtwork {
 		if (soldPrice > 0) {
 			this.soldPrice = soldPrice;
 			if (datastore != null)
-				datastore.ChangeData();
+				datastore.changeData();
 		} else {
 			throw new IllegalArgumentException();
 		}
 	}
 
 	@Override
-	public void setOfferings(AllOffers datastore) {
-		this.datastore = datastore;
+	public void setOfferings(AllOffers datastore1) {
+		this.datastore = datastore1;
 	}
 }

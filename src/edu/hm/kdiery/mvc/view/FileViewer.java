@@ -14,27 +14,38 @@ import edu.hm.kdiery.mvc.datastore.readonly.Offerings;
  */
 class FileViewer implements Viewer {
 
-	private int update = 0;
+	/**
+	 * counter update for logger call.
+	 */
+	private int updateCount = 0;
 
-	Offerings offerings;
+	/**
+	 * offerings variable for properties.
+	 */
+	private final Offerings offerings;
 
-	public FileViewer(Offerings offerings) {
+	/**
+	 * Constructor of this class.
+	 * 
+	 * @param offerings
+	 *            to be set
+	 */
+	/* default */FileViewer(Offerings offerings) {
 		this.offerings = offerings;
 	}
-	
+
 	@Override
 	public void update(Observable observable, Object arg) {
-		String homeDir = System.getProperty("java.io.tmpdir");
-		System.out.println(homeDir);
-		File file = new File(homeDir + "auction." + update + ".log");
+		final String homeDir = System.getProperty("java.io.tmpdir");
+		final File file = new File(homeDir + "auction." + updateCount + ".log");
 		try {
-			OutputStream write = new FileOutputStream(file);
+			final OutputStream write = new FileOutputStream(file);
 			Viewers.printProperties(offerings, write);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+		} catch (FileNotFoundException exe) {
+			System.out.println("File not found");
+		} catch (IOException exce) {
+			System.out.println("IO-Exception");
 		}
-		update++;
+		updateCount++;
 	}
 }

@@ -11,36 +11,69 @@ package edu.hm.kdiery.mvc.view;
  * @version 2018-05-21
  */
 public enum Callout {
-    /**
-     * Die Ordnungsnummer der Nachrichten entspricht der Anzahl verbleibender Schritte.
-     */
-    Done("%d zum Dritten, verkauft!", "Keine Gebote, nicht verkauft."),
-    Going2nd("%d zum Zweiten ...", "%d zum Zweiten ..."),
-    Going1st("%d zum Ersten ...", "%d zum Ersten ..."),
-    Remaining3("noch %d geboten, hoere ich mehr?", "Mindestgebot noch %d, bietet jemand?"),
-    Remaining4("%d geboten, hoere ich mehr?", "Mindestgebot %d, bietet jemand?"),
-    NewBid("%d geboten!", "Mindestgebot %d");
+	/**
+	 * Die Ordnungsnummer der Nachrichten entspricht der Anzahl verbleibender
+	 * Schritte.
+	 */
+	Done("%d zum Dritten, verkauft!", "Keine Gebote, nicht verkauft."),
+	/**
+	 * Going2nd to count.
+	 */
+	Going2nd("%d zum Zweiten ...", "%d zum Zweiten ..."),
+	/**
+	 * Going1st to count.
+	 */
+	Going1st("%d zum Ersten ...", "%d zum Ersten ..."),
+	/**
+	 * 3 steps remaining to count.
+	 */
+	Remaining3("noch %d geboten, hoere ich mehr?", "Mindestgebot noch %d, bietet jemand?"),
+	/**
+	 * 4 steps remaining to count.
+	 */
+	Remaining4("%d geboten, hoere ich mehr?", "Mindestgebot %d, bietet jemand?"),
+	/**
+	 * If a bidder bids.
+	 */
+	NewBid("%d geboten!", "Mindestgebot %d");
 
-    /**
-     * Nachrichtentext mit Gebot.
-     */
-    private final String formatBid;
+	/**
+	 * Nachrichtentext mit Gebot.
+	 */
+	private final String formatBid;
 
-    /**
-     * Nachrichtentext ohne Gebot.
-     */
-    private final String formatNobid;
+	/**
+	 * Nachrichtentext ohne Gebot.
+	 */
+	private final String formatNobid;
 
-    Callout(String formatBid, String formatNobid) {
-        this.formatBid = formatBid;
-        this.formatNobid = formatNobid;
-    }
+	/**
+	 * set the format bids.
+	 * 
+	 * @param formatBid
+	 *            if a bidder already bids.
+	 * @param formatNobid
+	 *            if no bidder bids for a artwork.
+	 */
+	Callout(String formatBid, String formatNobid) {
+		this.formatBid = formatBid;
+		this.formatNobid = formatNobid;
+	}
 
-    public String getFormatNobid() {
-        return formatNobid;
-    }
+	/**
+	 * gets the actual step.
+	 * 
+	 * @return String.
+	 */
+	public String getFormatNobid() {
+		return formatNobid;
+	}
 
-    public String getFormatBid() {
-        return formatBid;
-    }
+	/**
+	 * gets the actual step of no bidder.
+	 * @return String.
+	 */
+	public String getFormatBid() {
+		return formatBid;
+	}
 }
