@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Iterator;
 import java.util.Properties;
+import java.util.stream.Stream;
 
 import edu.hm.kdiery.mvc.datastore.readonly.Artwork;
 import edu.hm.kdiery.mvc.datastore.readonly.Offerings;
@@ -56,8 +57,10 @@ final class Viewers {
             properties.setProperty("offerings.bid", Integer.toString(offerings.getBid()));
         }
         int artworkIndex = 0;
-        for (final Iterator<? extends Artwork> artworkIterator = (offerings.getArtworks()).iterator(); artworkIterator
-                .hasNext(); ) {
+        final Stream<? extends Artwork> artworkStream = offerings.getArtworks();
+        final Iterator<? extends Artwork> artworkIterator = artworkStream.iterator();
+//        final Iterator<? extends Artwork> artworkIterator = (offerings.getArtworks()).iterator();
+        while (artworkIterator.hasNext()) {
             final Artwork artwork = artworkIterator.next();
             final String prefix = "artwork." + artworkIndex + '.';
             properties.setProperty(prefix + "title", artwork.getTitle());

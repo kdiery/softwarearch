@@ -13,13 +13,14 @@ import edu.hm.kdiery.mvc.view.*;
 public class Anwendung_Main {
 
     public static void main(String... strings) {
-   
-    	MutableArtwork kunst = MutableArtwork.make("Mona Lisa", 30000);
-    	MutableOfferings offers = MutableOfferings.make(kunst);
-    	Viewer duc = Viewer.make("spectator", offers, new PrintWriter(System.out));
-    	offers.setBidder("Duc");
-    	offers.notifyObservers();
-    	
+
+        MutableArtwork kunst = MutableArtwork.make("Mona Lisa", 30000);
+        MutableOfferings offers = MutableOfferings.make(kunst);
+//    	Viewer duc = Viewer.make("spectator", offers, new PrintWriter(System.out));
+    	final Viewer viewer = Viewer.make("logger", offers);
+        offers.setBidder("Duc");
+        offers.notifyObservers();
+
     }
 
 }
