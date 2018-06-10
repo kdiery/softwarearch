@@ -118,7 +118,7 @@ class Kunstwerk extends MutableArtwork {
 	 */
 	@Override
 	public void setSoldPrice(int soldPrice) throws IllegalArgumentException {
-		if (soldPrice > 0) {
+		if (soldPrice >= 0) {
 			this.soldPrice = soldPrice;
 			if (datastore != null)
 				datastore.changeData();

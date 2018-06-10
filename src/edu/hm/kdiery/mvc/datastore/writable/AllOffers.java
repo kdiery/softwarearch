@@ -77,7 +77,7 @@ import java.util.stream.Stream;
      */
     @Override
     public void setBid(int bid) throws IllegalArgumentException {
-        if (bid > 0) {
+        if (bid >= 0) {
             setChanged();
             this.bid = bid;
         } else {
@@ -99,7 +99,7 @@ import java.util.stream.Stream;
      */
     @Override
     public void setStepsRemaining(int stepsRemaining) throws IllegalArgumentException {
-        if (stepsRemaining > 0) {
+        if (stepsRemaining >= 0) {
             setChanged();
             this.stepsRemaining = stepsRemaining;
         } else {
