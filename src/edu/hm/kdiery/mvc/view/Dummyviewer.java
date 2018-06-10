@@ -14,8 +14,6 @@ public class Dummyviewer implements Viewer {
 	 */
 	@Override
 	public void update(Observable obserab, Object arg) {
-		if (arg != null)
-			throw new IllegalArgumentException();
 	}
 
 }

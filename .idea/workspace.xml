@@ -4,13 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/Anwendung_Main.java" line="6" mnemonic="8" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8858a82c-a04f-4061-bd44-adb77c49e337" name="Default" comment="new classes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/softwarearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/softwarearch.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hm/kdiery/mvc/datastore/writable/AllOffers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hm/kdiery/mvc/datastore/writable/AllOffers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/hm/kdiery/mvc/datastore/writable/Kunstwerk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/hm/kdiery/mvc/datastore/writable/Kunstwerk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/upload.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/upload.jar" afterDir="false" />
-    </list>
+    <list default="true" id="8858a82c-a04f-4061-bd44-adb77c49e337" name="Default" comment="new classes" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AllOffers.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AllOffers.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/edu/hm/kdiery/mvc/datastore/writable/AllOffers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="295">
@@ -67,6 +61,15 @@
                 <element signature="e#873#874#0" expanded="true" />
                 <element signature="e#916#917#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dummyviewer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/edu/hm/kdiery/mvc/view/Dummyviewer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -140,6 +143,7 @@
         <option value="$PROJECT_DIR$/src/edu/hm/kdiery/mvc/datastore/writable/OfferingsIT.java" />
         <option value="$PROJECT_DIR$/src/edu/hm/kdiery/mvc/datastore/writable/Kunstwerk.java" />
         <option value="$PROJECT_DIR$/src/edu/hm/kdiery/mvc/datastore/writable/AllOffers.java" />
+        <option value="$PROJECT_DIR$/src/edu/hm/kdiery/mvc/view/Dummyviewer.java" />
       </list>
     </option>
   </component>
@@ -359,13 +363,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/edu/hm/kdiery/mvc/datastore/readonly/Artwork.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/edu/hm/kdiery/mvc/view/Callout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -678,6 +675,13 @@
             <element signature="e#873#874#0" expanded="true" />
             <element signature="e#916#917#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/hm/kdiery/mvc/view/Dummyviewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
         </state>
       </provider>
     </entry>
