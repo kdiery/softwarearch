@@ -15,10 +15,13 @@ public class Anwendung_Main {
     public static void main(String... strings) {
 
         MutableArtwork kunst = MutableArtwork.make("Mona Lisa", 30000);
-        MutableOfferings offers = MutableOfferings.make(kunst);
+        MutableArtwork kunst2 = MutableArtwork.make("Der Schrei", 35000);
+        MutableOfferings offers = MutableOfferings.make(kunst, kunst2);
 //    	Viewer duc = Viewer.make("spectator", offers, new PrintWriter(System.out));
     	final Viewer viewer = Viewer.make("logger", offers);
         offers.setBidder("Duc");
+        offers.notifyObservers();
+        offers.setBid(2);
         offers.notifyObservers();
 
     }
