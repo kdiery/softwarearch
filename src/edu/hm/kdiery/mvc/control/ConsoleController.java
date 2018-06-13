@@ -26,4 +26,9 @@ public class ConsoleController extends Controller {
     public ConsoleController(final Auctioneer auctioneer) {
         this.auctioneer = auctioneer;
     }
+    
+    @Override
+    public void run() {
+    	
+    }
 }

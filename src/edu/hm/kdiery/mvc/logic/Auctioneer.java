@@ -1,5 +1,4 @@
 package edu.hm.kdiery.mvc.logic;
-import edu.hm.kdiery.mvc.datastore.readonly.Offerings;
 import edu.hm.kdiery.mvc.datastore.writable.MutableOfferings;
 
 public interface Auctioneer extends Runnable {

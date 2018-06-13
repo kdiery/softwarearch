@@ -31,4 +31,9 @@ public class RobotTrader extends Controller {
         this.auctioneer = auctioneer;
         this.arguments = args;
     }
+    
+    @Override
+    public void run() {
+    	
+    }
 }

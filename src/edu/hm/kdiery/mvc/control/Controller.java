@@ -21,7 +21,7 @@ public abstract class Controller extends Thread{
         } else if ("Robot".equals(viewer)) {
             controller = new RobotTrader(auctioneer, args);
         }
-        return null;
+        return controller;
     }
 
 }
