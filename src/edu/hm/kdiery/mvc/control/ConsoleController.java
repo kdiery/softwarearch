@@ -9,37 +9,39 @@ import edu.hm.kdiery.mvc.logic.Auctioneer;
  */
 public class ConsoleController extends Controller {
 
-	/**
-	 * name of controller.
-	 */
-	private static final String CONTROLLERNAME = "Console";
+    /**
+     * name of controller.
+     */
+    private static final String CONTROLLERNAME = "Console";
 
-	/**
-	 * auctioneer of auction.
-	 */
-	private final Auctioneer auctioneer;
+    /**
+     * auctioneer of auction.
+     */
+    private final Auctioneer auctioneer;
 
-	/**
-	 * Scanner to read the bid.
-	 */
-	private Scanner scan;
+    /**
+     * Scanner to read the bid.
+     */
+    private Scanner scan;
 
-	/**
-	 * Ctor for ConsoleController.
-	 * 
-	 * @param auctioneer
-	 *            of auction
-	 */
-	public ConsoleController(final Auctioneer auctioneer) {
-		this.auctioneer = auctioneer;
-		scan = new Scanner(System.in);
-	}
+    /**
+     * Ctor for ConsoleController.
+     *
+     * @param auctioneer of auction
+     */
+    public ConsoleController(final Auctioneer auctioneer) {
+        this.auctioneer = auctioneer;
+        scan = new Scanner(System.in);
+    }
 
-	@Override
-	public void run() {
-		while (true) {
-			final int bid = scan.nextInt();
-			auctioneer.placeBid(CONTROLLERNAME, bid);
-		}
-	}
+    @Override
+    public void run() {
+        synchronized (this) {
+            while (true) {
+                final int bid = scan.nextInt();
+                auctioneer.placeBid(CONTROLLERNAME, bid);
+                this.notifyAll();
+            }
+        }
+    }
 }
