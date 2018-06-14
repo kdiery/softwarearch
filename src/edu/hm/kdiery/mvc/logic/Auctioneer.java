@@ -9,7 +9,7 @@ public interface Auctioneer extends Runnable {
      * @param amount bid amount
      * @return true/false
      */
-    boolean placeBid(String bidder, int amount);
+    public boolean placeBid(String bidder, int amount);
 
 
     /**
@@ -17,7 +17,7 @@ public interface Auctioneer extends Runnable {
      * @param offerings of auction
      * @return auctioneer
      */
-    default Auctioneer make(MutableOfferings offerings) {
+    static Auctioneer make(MutableOfferings offerings) {
         return new ConcreteAuctioneer(offerings);
     }
 }

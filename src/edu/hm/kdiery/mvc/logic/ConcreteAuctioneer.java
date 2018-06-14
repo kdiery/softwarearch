@@ -1,5 +1,8 @@
 package edu.hm.kdiery.mvc.logic;
 
+
+import javax.swing.Timer;
+
 import edu.hm.kdiery.mvc.datastore.writable.MutableArtwork;
 import edu.hm.kdiery.mvc.datastore.writable.MutableOfferings;
 
@@ -19,6 +22,11 @@ public class ConcreteAuctioneer implements Auctioneer {
 	private final MutableOfferings offerings;
 
 	/**
+	 * boolean if a new bid is incoming.
+	 */
+	private boolean newBid = false;
+
+	/**
 	 * Ctor of ConcreteAuctioneer.
 	 *
 	 * @param offerings
@@ -30,30 +38,43 @@ public class ConcreteAuctioneer implements Auctioneer {
 
 	@Override
 	public boolean placeBid(String bidder, int amount) {
-		return ((bidder != null) && !bidder.isEmpty()) && (amount > offerings.getBid());
+		System.out.println(bidder + ": " + amount);
+		boolean toReturn = false;
+		if ((bidder != null) && !bidder.isEmpty() && amount > offerings.getBid()) {
+			offerings.setBidder(bidder);
+			offerings.setBid(amount);
+			toReturn = true;
+			newBid = true;
+		}
+		return toReturn;
 	}
 
 	@Override
 	public void run() {
+		new Timer(1000, e -> stepBack());
 		offerings.getArtworks().forEach((MutableArtwork artwork) -> {
+			System.out.println(artwork.getTitle()+ ": " + artwork.getInitialPrice());
 			offerings.setStepsRemaining(FIVE);
 			while (offerings.getStepsRemaining() > 0) {
 				offerings.notifyObservers();
-				// wait here
-				if (placeBid("lol", 2)) { // TODO auf was horchen?
+				if (newBid) {
+					newBid = false;
 					offerings.setStepsRemaining(FIVE);
-				} else {
-					offerings.setStepsRemaining(offerings.getStepsRemaining() - 1);
 				}
 			}
 			offerings.notifyObservers();
-			if (placeBid("lol", 2)) {
+			if (newBid) {
+				newBid = false;
 				artwork.setSoldPrice(offerings.getBid());
 				offerings.setBid(0);
-				// Gebot löschen.
 			}
 			artwork.setAuctioned(true);
 		});
 		offerings.notifyObservers();
+	}
+	
+	private void stepBack() {
+		if(offerings.getStepsRemaining() > 0)
+			offerings.setStepsRemaining(offerings.getStepsRemaining() - 1);
 	}
 }
