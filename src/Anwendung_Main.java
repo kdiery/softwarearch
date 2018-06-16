@@ -2,8 +2,7 @@ import edu.hm.kdiery.mvc.datastore.writable.MutableArtwork;
 import edu.hm.kdiery.mvc.logic.Auctioneer;
 import edu.hm.kdiery.mvc.logic.ConcreteAuctioneer;
 import edu.hm.kdiery.mvc.control.ConsoleController;
-import edu.hm.kdiery.mvc.control.Controller;
-import edu.hm.kdiery.mvc.datastore.writable.*;
+import edu.hm.kdiery.mvc.control.Controller;import edu.hm.kdiery.mvc.datastore.writable.*;
 
 public class Anwendung_Main {
 

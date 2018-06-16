@@ -30,18 +30,16 @@ public class ConsoleController extends Controller {
      * @param auctioneer of auction
      */
     public ConsoleController(final Auctioneer auctioneer) {
+        setDaemon(true);
         this.auctioneer = auctioneer;
         scan = new Scanner(System.in);
     }
 
     @Override
     public void run() {
-        synchronized (this) {
             while (true) {
                 final int bid = scan.nextInt();
                 auctioneer.placeBid(CONTROLLERNAME, bid);
-                this.notifyAll();
             }
-        }
     }
 }

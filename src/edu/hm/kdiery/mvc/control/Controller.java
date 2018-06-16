@@ -20,9 +20,9 @@ public abstract class Controller extends Thread {
 	 */
 	public static Controller make(final String viewer, final Auctioneer auctioneer, final String... args) {
 		Controller controller = null;
-		if ("Console".equals(viewer)) {
+		if ("CONSOLE".equals(viewer.toUpperCase())) {
 			controller = new ConsoleController(auctioneer);
-		} else if ("Robot".equals(viewer)) {
+		} else if ("ROBOT".equals(viewer.toUpperCase())) {
 			controller = new RobotTrader(auctioneer, args);
 		}
 		return controller;

@@ -24,6 +24,8 @@ public class ConcreteAuctioneer implements Auctioneer {
      */
     private boolean newBid = false;
 
+    private final long delay;
+
     /**
      * Ctor of ConcreteAuctioneer.
      *
@@ -31,7 +33,7 @@ public class ConcreteAuctioneer implements Auctioneer {
      */
     public ConcreteAuctioneer(final MutableOfferings offerings) {
         this.offerings = offerings;
-        System.setProperty("auction.delay", "1000");
+        delay = Long.parseLong(System.getProperty("auction.delay"));
     }
 
     @Override
@@ -40,10 +42,13 @@ public class ConcreteAuctioneer implements Auctioneer {
         boolean toReturn = false;
         final Artwork artwork = offerings.getArtworks().filter(kunst -> !((Artwork) kunst).isAuctioned()).findFirst().orElseThrow(IllegalStateException::new);
         if ((bidder != null) && !bidder.isEmpty() && amount > offerings.getBid() && amount > artwork.getInitialPrice()) {
+            synchronized (this) {
             offerings.setBidder(bidder);
             offerings.setBid(amount);
-            toReturn = true;
             newBid = true;
+                this.notifyAll();
+            }
+            toReturn = true;
         }
         return toReturn;
     }
@@ -56,16 +61,16 @@ public class ConcreteAuctioneer implements Auctioneer {
                 offerings.notifyObservers();
                 synchronized (this) {
                     try {
-                        this.wait(Long.parseLong(System.getProperty("auction.delay")));
+                        this.wait(delay);
                     } catch (InterruptedException ex) {
                         ex.printStackTrace();
                     }
-                }
-                if (newBid) {
+                    if (newBid) {
                         newBid = false;
                         offerings.setStepsRemaining(FIVE);
-                } else {
-                    offerings.setStepsRemaining(offerings.getStepsRemaining() - 1);
+                    } else {
+                        offerings.setStepsRemaining(offerings.getStepsRemaining() - 1);
+                    }
                 }
             }
             offerings.notifyObservers();
@@ -77,10 +82,5 @@ public class ConcreteAuctioneer implements Auctioneer {
             artwork.setAuctioned(true);
         });
         offerings.notifyObservers();
-    }
-
-    private void stepBack() {
-        if (offerings.getStepsRemaining() > 0)
-            offerings.setStepsRemaining(offerings.getStepsRemaining() - 1);
     }
 }
