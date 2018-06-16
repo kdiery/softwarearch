@@ -1,5 +1,6 @@
 package edu.hm.kdiery.mvc.control;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import edu.hm.kdiery.mvc.logic.Auctioneer;
@@ -37,9 +38,18 @@ public class ConsoleController extends Controller {
 
     @Override
     public void run() {
-            while (true) {
-                final int bid = scan.nextInt();
+        String input = "";
+        int bid = 0;
+        while (true) {
+            synchronized (this) {
+                try {
+                    input = scan.nextLine();
+                    bid = Integer.parseInt(input);
+                } catch (NumberFormatException ex) {
+
+                }
                 auctioneer.placeBid(CONTROLLERNAME, bid);
             }
+        }
     }
 }

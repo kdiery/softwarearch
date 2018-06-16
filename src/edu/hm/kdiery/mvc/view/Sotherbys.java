@@ -36,7 +36,7 @@ public class Sotherbys {
      */
     public static void main(String... args) {
 
-        System.setProperty("auction.delay", "3000");
+        System.setProperty("auction.delay", "5000");
         // zerlegt ein Kommandozeilenargument in einen Stream von Wort-Arrays
         final Function<Integer, Stream<String[]>> argSplitter = index -> Stream.of(args[index].split(","))
                 .filter(arg -> !arg.isEmpty())
